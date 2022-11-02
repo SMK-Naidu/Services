@@ -1,0 +1,16 @@
+<p>data works!</p>
+<h1>List of data</h1>
+     <table width="100%" border="2px solidblack">
+        <tr>
+            <th>userId</th>
+            <th>id</th>
+            <th>title</th>
+            <th>body</th>
+        </tr>
+        <tr *ngFor="let data of datalist">
+            <td>{{data.userId}}</td>
+            <td>{{data.id}}</td>
+            <td>{{data.title}}</td>
+            <td>{{data.body}}</td>
+        </tr>
+    </table>

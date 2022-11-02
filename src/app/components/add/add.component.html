@@ -1,0 +1,18 @@
+<p>add works!</p>
+
+<h2>List of users</h2>
+<ul>
+    <li *ngFor="let add of userslist">{{add.userId}}{{add.userName}}</li>
+    <table>
+        <tr>
+            <th>userId</th>
+            <th>userName</th>
+        </tr>
+        <tr *ngFor="let add of userslist">
+            <td>{{add.userId}}</td>
+            <td>{{add.userName}}</td>
+        </tr>
+    </table>
+</ul>
+
+<button (click)="userService.callingFromTemplate()">Calling Directly</button>
